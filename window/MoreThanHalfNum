@@ -1,0 +1,31 @@
+/* this method check if the num appear more than half of spaces in a list.
+
+Public int MoreThanHalfNum(int [] array){
+  
+  int half = (int)Math.ceil(array.length/2)+1;
+  int times=0;
+  int num = array[0];
+  
+  //only need to run half of a length of athe array
+  for(int i=0; i<half;){
+    
+    //check and compare all the num in the array list
+    for(int k =0;k<array.length;k++){
+      if(num==array[k])
+        times++;
+      }
+      
+      //if times happen to be more than half then return
+      if(times>half)
+        return num;
+      
+      //else continue to the next num
+      else{
+        num = array[++i];
+        times=0;
+      }
+  
+  }
+  
+  return 0;
+}
