@@ -1,0 +1,38 @@
+if (x) { ... }
+The value of x as a boolean is considered to be false if x is the number zero or is the empty string or is null or is undefined.
+
+implict conversions for ==
+
+true
+==
+
+17 == "17"
+'' == 0
+
+never do type conversions on their operator
+===
+
+false
+
+17 === '17'
+
+
+you can use Number, String, and Boolean as conversion functions. For example,
+
+x = Number(y);
+
+hat is, you say, "catch (e)" rather than "catch(Exception e)
+
+An error can be generated using the throw statement. Any type of value can be thrown. You might, for example, throw a string that represents an error message:
+
+throw "Sorry, that value is illegal.";
+
+function sum() {
+    var i;
+    var total = 0;
+    for (i = 0; i < arguments.length; i++) {
+         total += arguments[i];
+    }
+    return total;
+}
+With this definition, you can call sum(2,2), sum(1,2,3,4,5), and even sum(). (The value of the last function call is zero.)
